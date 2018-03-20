@@ -202,8 +202,8 @@ class NL_CheckOutV3
      *    payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
     public function __BankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
-                                  $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
-                                  $buyer_address, $array_items)
+                                   $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
+                                   $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -249,8 +249,8 @@ class NL_CheckOutV3
     }
 
     public function __BankOfflineCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
-                                         $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
-                                         $buyer_address, $array_items)
+                                          $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
+                                          $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -297,8 +297,8 @@ class NL_CheckOutV3
 
 
     public function __officeBankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
-                                        $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
-                                        $buyer_address, $array_items)
+                                         $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
+                                         $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -369,8 +369,8 @@ class NL_CheckOutV3
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
     public function __TTVPCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
-                           $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
-                           $buyer_address, $array_items)
+                                   $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
+                                   $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -438,8 +438,8 @@ class NL_CheckOutV3
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
     public function __NLCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount,
-                         $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
-                         $buyer_address, $array_items)
+                                 $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
+                                 $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -547,8 +547,10 @@ class NL_CheckOutV3
         if ($result != '' && $status == 200) {
             $xml_result = str_replace('&', '&amp;', (string)$result);
             $nl_result = simplexml_load_string($xml_result);
-            $nl_result->error_message = $this->GetErrorMessage($nl_result->error_code);
-        } else $nl_result->error_message = $error;
+            $nl_result->error_message = $this->__GetErrorMessage($nl_result->error_code);
+        } else {
+            $nl_result->error_message = $error;
+        }
         return $nl_result;
 
     }

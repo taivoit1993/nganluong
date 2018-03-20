@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73953ae-e014-4a9d-95a5-24b9fc0c78ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BankCharge.php" afterPath="$PROJECT_DIR$/src/BankCharge.php" />
       <change beforePath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" afterPath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,23 +16,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NL_Checkoutv3.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NL_Checkoutv3.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="555" column="37" lean-forward="true" selection-start-line="555" selection-start-column="22" selection-end-line="555" selection-end-column="37" />
+            <state relative-caret-position="543">
+              <caret line="552" column="9" lean-forward="true" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
               <folding>
-                <element signature="e#14151#17476#0#PHP" expanded="false" />
-                <element signature="e#18509#20200#0#PHP" expanded="false" />
-                <element signature="e#24181#25828#0#PHP" expanded="false" />
-                <element signature="e#26459#27434#0#PHP" expanded="false" />
-                <element signature="e#27512#29720#0#PHP" expanded="false" />
+                <element signature="e#14155#17482#0#PHP" expanded="false" />
+                <element signature="e#18531#20222#0#PHP" expanded="false" />
+                <element signature="e#24219#25866#0#PHP" expanded="false" />
+                <element signature="e#27576#29784#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankCharge.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BankCharge.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
@@ -61,6 +59,8 @@
       <find>function ___</find>
       <find>__BankCheckout</find>
       <find>function</find>
+      <find>GetErrorMessage</find>
+      <find>$nl_result</find>
     </findStrings>
     <replaceStrings>
       <replace>function _</replace>
@@ -175,12 +175,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521515652753</updated>
       <workItem from="1521515654100" duration="1615000" />
-      <workItem from="1521517298215" duration="14402000" />
+      <workItem from="1521517298215" duration="14663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16017000" />
+    <option name="totallyTimeSpent" value="16278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1314" height="784" extended-state="6" />
@@ -222,11 +222,10 @@
         <state relative-caret-position="170">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
-            <element signature="e#14151#17476#0#PHP" expanded="false" />
-            <element signature="e#18509#20200#0#PHP" expanded="false" />
-            <element signature="e#24181#25828#0#PHP" expanded="false" />
-            <element signature="e#26459#27434#0#PHP" expanded="false" />
-            <element signature="e#27512#29720#0#PHP" expanded="false" />
+            <element signature="e#14155#17482#0#PHP" expanded="false" />
+            <element signature="e#18531#20222#0#PHP" expanded="false" />
+            <element signature="e#24219#25866#0#PHP" expanded="false" />
+            <element signature="e#27576#29784#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -292,20 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="555" column="37" lean-forward="true" selection-start-line="555" selection-start-column="22" selection-end-line="555" selection-end-column="37" />
-          <folding>
-            <element signature="e#14151#17476#0#PHP" expanded="false" />
-            <element signature="e#18509#20200#0#PHP" expanded="false" />
-            <element signature="e#24181#25828#0#PHP" expanded="false" />
-            <element signature="e#26459#27434#0#PHP" expanded="false" />
-            <element signature="e#27512#29720#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -318,6 +303,19 @@
             <element signature="e#3384#3967#0#PHP" expanded="false" />
             <element signature="e#4104#4201#0#PHP" expanded="false" />
             <element signature="e#4594#4708#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="552" column="9" lean-forward="true" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
+          <folding>
+            <element signature="e#14155#17482#0#PHP" expanded="false" />
+            <element signature="e#18531#20222#0#PHP" expanded="false" />
+            <element signature="e#24219#25866#0#PHP" expanded="false" />
+            <element signature="e#27576#29784#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
