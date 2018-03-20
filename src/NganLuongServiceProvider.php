@@ -3,6 +3,7 @@
 namespace QsoftVN\NganLuong;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 /**
  * ServiceProvider
@@ -33,9 +34,11 @@ class NganLuongServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('BankCharge', function () {
-            return new BankCharge();
+        $this->app->booting(function () {
+            $loader = AliasLoader::getInstance();
+            $loader->alias('NLBankCharge', 'QsoftVN\NganLuong\Facades\NLBankCharge');
         });
-        $this->app->alias('NLBankCharge', 'QsoftVN\NganLuong\Facades\NLBankCharge');
+
+        $this->app->bind('BankCharge', BankCharge::class);
     }
 }

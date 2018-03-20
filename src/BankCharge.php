@@ -139,8 +139,8 @@ class BankCharge extends NL_CheckOutV3
     protected function validator($input)
     {
         $validator = Validator::make($input, [
-            'type_card' => 'required',
-            'bank_code' => 'required',
+//            'type_card' => 'required',
+//            'bank_code' => 'required',
             'total_amount' => 'required',
         ]);
 
