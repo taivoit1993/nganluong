@@ -39,16 +39,13 @@ class BankCharge extends NL_CheckOutV3
      * @param array $input
      * @return Response
      */
-    public function BankCheckout($input)
+    public function ATM($input)
     {
-        $this->validator($input);
+        $validator = $this->validator($input);
+        if (!$validator['success']) {
+            return $validator;
+        }
         $params = $this->formatInput($input);
-        $buyer = [
-            'fullname' => 'Alex Doan',
-            'email' => 'hoangdv1112@gmail.com',
-            'mobile' => '0948121190',
-            'address' => 'Ha Noi'
-        ];
         $order_code = 'macode_' . time();
 
         return $this->__BankCheckout(
@@ -57,7 +54,7 @@ class BankCharge extends NL_CheckOutV3
             $params['order_description'],
             $params['tax_amount'], $params['fee_shipping'], $params['discount_amount'],
             $params['return_url'], $params['cancel_url'],
-            $buyer['fullname'], $buyer['email'], $buyer['mobile'], $buyer['address'],
+            $params['fullname'], $params['email'], $params['mobile'], $params['address'],
             $params['items']
         );
     }
@@ -68,26 +65,23 @@ class BankCharge extends NL_CheckOutV3
      * @param array $input
      * @return Response
      */
-    public function VisaCheckout($input)
+    public function VISA($input)
     {
-        $this->validator($input);
+        $validator = $this->validator($input);
+        if (!$validator['success']) {
+            return $validator;
+        }
         $params = $this->formatInput($input);
-        $buyer = [
-            'fullname' => 'Alex Doan',
-            'email' => 'hoangdv1112@gmail.com',
-            'mobile' => '0948121190',
-            'address' => 'Ha Noi'
-        ];
         $order_code = 'macode_' . time();
 
         return $this->__VisaCheckout(
             $order_code, $params['total_amount'],
-            $params['bank_code'], $params['payment_type'],
+            $params['payment_type'],
             $params['order_description'],
             $params['tax_amount'], $params['fee_shipping'], $params['discount_amount'],
             $params['return_url'], $params['cancel_url'],
-            $buyer['fullname'], $buyer['email'], $buyer['mobile'], $buyer['address'],
-            $params['items']
+            $params['fullname'], $params['email'], $params['mobile'], $params['address'],
+            $params['items'], $params['bank_code']
         );
     }
 
@@ -97,7 +91,7 @@ class BankCharge extends NL_CheckOutV3
      * @param string $ngl_token token cuả ngân lượng
      * @return Response
      */
-    public function GetTransactionDetail($ngl_token)
+    public function TransactionDetail($ngl_token)
     {
         $ngl_result = $this->__GetTransactionDetail($ngl_token);
         $ngl_message = $this->__GetErrorMessage($ngl_result->error_code);
@@ -140,14 +134,26 @@ class BankCharge extends NL_CheckOutV3
     {
         $validator = Validator::make($input, [
 //            'type_card' => 'required',
-//            'bank_code' => 'required',
+            'bank_code' => 'required',
             'total_amount' => 'required',
+            'fullname' => 'required',
+            'email' => 'required|email',
+            'mobile' => 'required',
+            'address' => 'required',
         ]);
 
         if ($validator->fails()) {
-            // return [];
-            return new JsonResponse($validator->errors()->getMessages(), 422);
+            return [
+                'success' => false,
+                'message' => 'validateFailure',
+                'errors' => $validator->errors()->getMessages()
+            ];
         }
+
+        return [
+            'success' => true,
+            'message' => 'validatePass'
+        ];
     }
 
     /**
@@ -159,11 +165,16 @@ class BankCharge extends NL_CheckOutV3
     protected function formatInput($input)
     {
         return [
+            // buyer
+            'fullname' => $input['fullname'],
+            'email' => $input['email'],
+            'mobile' => $input['mobile'],
+            'address' => $input['address'],
             // URL for Redirect
             'return_url' => isset($input['return_url']) ? $input['return_url'] : $this->return_url,
             'cancel_url' => isset($input['cancel_url']) ? $input['cancel_url'] : $this->cancel_url,
             // Fees
-            'total_amount' =>  isset($input['total_amount']) ? $input['total_amount'] : 0,
+            'total_amount' => isset($input['total_amount']) ? $input['total_amount'] : 0,
             'tax_amount' => config('nganluong.tax_amount', 0),
             'fee_shipping' => config('nganluong.fee_shipping', 0),
             'discount_amount' => config('nganluong.discount_amount', 0),

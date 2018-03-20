@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73953ae-e014-4a9d-95a5-24b9fc0c78ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" afterPath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/BankCharge.php" afterPath="$PROJECT_DIR$/src/BankCharge.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,41 +16,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NL_Checkoutv3.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="552" column="9" lean-forward="true" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
-              <folding>
-                <element signature="e#14155#17482#0#PHP" expanded="false" />
-                <element signature="e#18531#20222#0#PHP" expanded="false" />
-                <element signature="e#24219#25866#0#PHP" expanded="false" />
-                <element signature="e#27576#29784#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankCharge.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="47" />
-              <folding>
-                <element signature="e#1347#1517#0#PHP" expanded="false" />
-                <element signature="e#1577#2021#0#PHP" expanded="false" />
-                <element signature="e#2530#2974#0#PHP" expanded="false" />
-                <element signature="e#2987#3176#0#PHP" expanded="false" />
-                <element signature="e#3384#3967#0#PHP" expanded="false" />
-                <element signature="e#4104#4201#0#PHP" expanded="false" />
-                <element signature="e#4594#4708#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -59,8 +26,8 @@
       <find>function ___</find>
       <find>__BankCheckout</find>
       <find>function</find>
-      <find>GetErrorMessage</find>
       <find>$nl_result</find>
+      <find>GetErrorMessage</find>
     </findStrings>
     <replaceStrings>
       <replace>function _</replace>
@@ -79,8 +46,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/NganLuongServiceProvider.php" />
-        <option value="$PROJECT_DIR$/src/BankCharge.php" />
         <option value="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" />
+        <option value="$PROJECT_DIR$/src/BankCharge.php" />
       </list>
     </option>
   </component>
@@ -113,8 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,18 +96,20 @@
               <item name="nganluong" type="b2602c69:ProjectViewProjectNode" />
               <item name="nganluong" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Library" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/localhost/otv566" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -175,28 +142,29 @@
       <option name="presentableId" value="Default" />
       <updated>1521515652753</updated>
       <workItem from="1521515654100" duration="1615000" />
-      <workItem from="1521517298215" duration="14663000" />
+      <workItem from="1521517298215" duration="15401000" />
+      <workItem from="1521539282506" duration="1025000" />
+      <workItem from="1521542109487" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16278000" />
+    <option name="totallyTimeSpent" value="18072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1314" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13636364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -217,16 +185,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1471#1919#0#PHP" expanded="false" />
+            <element signature="e#2784#2973#0#PHP" expanded="false" />
+            <element signature="e#2978#3892#0#PHP" expanded="false" />
+            <element signature="e#3898#3995#0#PHP" expanded="false" />
+            <element signature="e#4717#4831#0#PHP" expanded="false" />
+            <element signature="e#4836#6340#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="e#14155#17482#0#PHP" expanded="false" />
-            <element signature="e#18531#20222#0#PHP" expanded="false" />
-            <element signature="e#24219#25866#0#PHP" expanded="false" />
-            <element signature="e#27576#29784#0#PHP" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -235,14 +213,53 @@
         <state relative-caret-position="493">
           <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="e#1347#1517#0#PHP" expanded="false" />
-            <element signature="e#1577#2021#0#PHP" expanded="false" />
-            <element signature="e#2530#2974#0#PHP" expanded="false" />
-            <element signature="e#2987#3176#0#PHP" expanded="false" />
-            <element signature="e#3384#3967#0#PHP" expanded="false" />
-            <element signature="e#4104#4201#0#PHP" expanded="false" />
-            <element signature="e#4594#4708#0#PHP" expanded="false" />
+            <element signature="e#1471#1919#0#PHP" expanded="false" />
+            <element signature="e#2784#2973#0#PHP" expanded="false" />
+            <element signature="e#2978#3892#0#PHP" expanded="false" />
+            <element signature="e#3898#3995#0#PHP" expanded="false" />
+            <element signature="e#4717#4831#0#PHP" expanded="false" />
+            <element signature="e#4836#6340#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Facades/NLBankCharge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NganLuongServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -254,68 +271,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NganLuongServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="82" />
-          <folding>
-            <element signature="e#37#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Facades/NLBankCharge.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="47" />
+        <state relative-caret-position="491">
+          <caret line="146" column="35" lean-forward="true" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
           <folding>
-            <element signature="e#1347#1517#0#PHP" expanded="false" />
-            <element signature="e#1577#2021#0#PHP" expanded="false" />
-            <element signature="e#2530#2974#0#PHP" expanded="false" />
-            <element signature="e#2987#3176#0#PHP" expanded="false" />
-            <element signature="e#3384#3967#0#PHP" expanded="false" />
-            <element signature="e#4104#4201#0#PHP" expanded="false" />
-            <element signature="e#4594#4708#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="552" column="9" lean-forward="true" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
-          <folding>
-            <element signature="e#14155#17482#0#PHP" expanded="false" />
-            <element signature="e#18531#20222#0#PHP" expanded="false" />
-            <element signature="e#24219#25866#0#PHP" expanded="false" />
-            <element signature="e#27576#29784#0#PHP" expanded="false" />
+            <element signature="e#1471#1919#0#PHP" expanded="false" />
+            <element signature="e#2784#2973#0#PHP" expanded="false" />
+            <element signature="e#2978#3892#0#PHP" expanded="false" />
+            <element signature="e#3898#3995#0#PHP" expanded="false" />
+            <element signature="e#4717#4831#0#PHP" expanded="false" />
+            <element signature="e#4836#6340#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
