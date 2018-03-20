@@ -368,7 +368,7 @@ class NL_CheckOutV3
      * .....
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
-    function __TTVPCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
+    public function __TTVPCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
                            $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                            $buyer_address, $array_items)
     {
@@ -437,7 +437,7 @@ class NL_CheckOutV3
      *
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
-    function __NLCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount,
+    public function __NLCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount,
                          $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                          $buyer_address, $array_items)
     {
@@ -482,7 +482,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    function __IBCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items)
+    public function __IBCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -528,7 +528,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    function __CheckoutCall($post_field)
+    public function CheckoutCall($post_field)
     {
 
         $ch = curl_init();
@@ -553,7 +553,7 @@ class NL_CheckOutV3
 
     }
 
-    function __GetErrorMessage($error_code)
+    public function __GetErrorMessage($error_code)
     {
         $arrCode = array(
             '00' => 'Thành công',

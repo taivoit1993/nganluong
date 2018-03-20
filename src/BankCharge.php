@@ -163,6 +163,7 @@ class BankCharge extends NL_CheckOutV3
             'return_url' => isset($input['return_url']) ? $input['return_url'] : $this->return_url,
             'cancel_url' => isset($input['cancel_url']) ? $input['cancel_url'] : $this->cancel_url,
             // Fees
+            'total_amount' =>  isset($input['total_amount']) ? $input['total_amount'] : 0,
             'tax_amount' => config('nganluong.tax_amount', 0),
             'fee_shipping' => config('nganluong.fee_shipping', 0),
             'discount_amount' => config('nganluong.discount_amount', 0),
