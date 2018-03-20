@@ -24,23 +24,18 @@ class NganLuongServiceProvider extends ServiceProvider
         $this->publishes([
             $views_path => base_path('resources/views/vendor/NganLuong')
         ]);*/
+
+        // Publish config files
+        $this->publishes([
+            __DIR__ . '/config/nganluong.php' => config_path('nganluong.php'),
+        ]);
     }
 
     public function register()
     {
-        $this->registerGFormBuilder();
-        $this->app->alias('NLBankCharge', 'QsoftVN\NganLuong\Facades\NLBankCharge');
-    }
-
-    /**
-     * Register the HTML builder instance.
-     *
-     * @return void
-     */
-    protected function registerGFormBuilder()
-    {
-        $this->app->singleton('NLBankCharge', function ($app) {
-
+        $this->app->bind('BankCharge', function () {
+            return new BankCharge();
         });
+        $this->app->alias('NLBankCharge', 'QsoftVN\NganLuong\Facades\NLBankCharge');
     }
 }
