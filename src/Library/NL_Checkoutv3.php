@@ -134,7 +134,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    public function _PrepaidVisaCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items, $bank_code)
+    public function __PrepaidVisaCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items, $bank_code)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -201,7 +201,7 @@ class NL_CheckOutV3
      *   .....
      *    payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
-    public function _BankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
+    public function __BankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
                                   $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                                   $buyer_address, $array_items)
     {
@@ -248,7 +248,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    public function _BankOfflineCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
+    public function __BankOfflineCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
                                          $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                                          $buyer_address, $array_items)
     {
@@ -296,7 +296,7 @@ class NL_CheckOutV3
     }
 
 
-    public function _officeBankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
+    public function __officeBankCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
                                         $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                                         $buyer_address, $array_items)
     {
@@ -368,7 +368,7 @@ class NL_CheckOutV3
      * .....
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
-    function _TTVPCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
+    function __TTVPCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount,
                            $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                            $buyer_address, $array_items)
     {
@@ -437,7 +437,7 @@ class NL_CheckOutV3
      *
      * payment_type Kiểu giao dịch: 1 - Ngay; 2 - Tạm giữ; Nếu không truyền hoặc bằng rỗng thì lấy theo chính sách của NganLuong.vn
      */
-    function _NLCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount,
+    function __NLCheckout($order_code, $total_amount, $payment_type, $order_description, $tax_amount,
                          $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile,
                          $buyer_address, $array_items)
     {
@@ -482,7 +482,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    function _IBCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items)
+    function __IBCheckout($order_code, $total_amount, $bank_code, $payment_type, $order_description, $tax_amount, $fee_shipping, $discount_amount, $return_url, $cancel_url, $buyer_fullname, $buyer_email, $buyer_mobile, $buyer_address, $array_items)
     {
         $params = array(
             'cur_code' => $this->cur_code,
@@ -528,7 +528,7 @@ class NL_CheckOutV3
         return $nl_result;
     }
 
-    function _CheckoutCall($post_field)
+    function __CheckoutCall($post_field)
     {
 
         $ch = curl_init();
@@ -553,7 +553,7 @@ class NL_CheckOutV3
 
     }
 
-    function _GetErrorMessage($error_code)
+    function __GetErrorMessage($error_code)
     {
         $arrCode = array(
             '00' => 'Thành công',
