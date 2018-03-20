@@ -1,0 +1,22 @@
+{
+    "name": "alexdoan/nganluong",
+    "description": "Tích hợp thanh toán qua Ngân Lượng cho website Laravel 5.2 trở lên.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Doan",
+            "email": "hoangdv1112@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/http": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "QsoftVN\\NganLuong\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
