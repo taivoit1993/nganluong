@@ -46,7 +46,7 @@ class BankCharge extends NL_CheckOutV3
             return $validator;
         }
         $params = $this->formatInput($input);
-        $order_code = 'macode_' . time();
+        $order_code = uniqid();
 
         return $this->__BankCheckout(
             $order_code, $params['total_amount'],
@@ -72,7 +72,7 @@ class BankCharge extends NL_CheckOutV3
             return $validator;
         }
         $params = $this->formatInput($input);
-        $order_code = 'macode_' . time();
+        $order_code = uniqid();
 
         return $this->__VisaCheckout(
             $order_code, $params['total_amount'],

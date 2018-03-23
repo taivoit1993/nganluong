@@ -549,6 +549,7 @@ class NL_CheckOutV3
             $nl_result = simplexml_load_string($xml_result);
             $nl_result->error_message = $this->__GetErrorMessage($nl_result->error_code);
         } else {
+            $nl_result = new \stdClass ();
             $nl_result->error_message = $error;
         }
         return $nl_result;
