@@ -100,20 +100,11 @@ class BankCharge extends NL_CheckOutV3
             '00' == $ngl_result->error_code &&
             '00' == $ngl_result->transaction_status
         ) {
-            // Stored Ngl_checkout_payment
-            /*$paramsCheckout = [
-                'time_limit' => '',
-                'total_item' => '',
-                'item_name1' => '',
-                'item_quantity1' => '',
-                'item_amount1' => '',
-                'item_url1' => ''
-            ];*/
-
             return [
                 'message' => $ngl_message,
                 'code' => 200,
-                'status' => true
+                'status' => true,
+                'data' => $ngl_result
             ];
         }
 
