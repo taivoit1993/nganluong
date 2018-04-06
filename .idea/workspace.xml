@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73953ae-e014-4a9d-95a5-24b9fc0c78ad" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/BankCharge.php" afterPath="$PROJECT_DIR$/src/BankCharge.php" />
-      <change beforePath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" afterPath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" />
+      <change beforePath="$PROJECT_DIR$/src/Library/NL_Checkoutv3.php" afterPath="$PROJECT_DIR$/src/Library/NL_CheckOutV3.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,12 +16,12 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="BankCharge.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="-187">
+              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="43" />
               <folding>
                 <element signature="e#1461#1909#0#PHP" expanded="false" />
                 <element signature="e#2764#2953#0#PHP" expanded="false" />
@@ -33,6 +31,16 @@
                 <element signature="e#4697#4811#0#PHP" expanded="false" />
                 <element signature="e#4816#6320#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NL_CheckOutV3.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Library/NL_CheckOutV3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,6 +58,7 @@
       <find>$nl_result</find>
       <find>GetErrorMessage</find>
       <find>macode_</find>
+      <find>NL_CheckOutV3</find>
     </findStrings>
     <replaceStrings>
       <replace>function _</replace>
@@ -110,12 +119,23 @@
               <item name="nganluong" type="b2602c69:ProjectViewProjectNode" />
               <item name="nganluong" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="nganluong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nganluong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nganluong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nganluong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Library" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,18 +177,19 @@
       <workItem from="1521517298215" duration="15401000" />
       <workItem from="1521539282506" duration="1025000" />
       <workItem from="1521542109487" duration="31000" />
-      <workItem from="1521794283486" duration="141000" />
+      <workItem from="1521794283486" duration="725000" />
+      <workItem from="1522987815805" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18213000" />
+    <option name="totallyTimeSpent" value="18835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1314" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13853504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2539809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -215,7 +236,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
+    <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1461#1909#0#PHP" expanded="false" />
+            <element signature="e#2764#2953#0#PHP" expanded="false" />
+            <element signature="e#2958#3872#0#PHP" expanded="false" />
+            <element signature="e#3878#3975#0#PHP" expanded="false" />
+            <element signature="e#3980#4691#0#PHP" expanded="false" />
+            <element signature="e#4697#4811#0#PHP" expanded="false" />
+            <element signature="e#4816#6320#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library/NL_CheckOutV3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
@@ -277,26 +314,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Library/NL_Checkoutv3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="551" column="42" lean-forward="false" selection-start-line="551" selection-start-column="42" selection-end-line="551" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Library/NL_CheckOutV3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BankCharge.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="-187">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="e#1461#1909#0#PHP" expanded="false" />
             <element signature="e#2764#2953#0#PHP" expanded="false" />
