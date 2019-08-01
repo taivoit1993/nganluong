@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/http": "^5.2.*"
+        "illuminate/http": "^5.5.*"
     },
     "extra": {
         "branch-alias": {
