@@ -8,5 +8,5 @@ Install (Laravel)
 -----------------
 Install via composer
 ```
-composer require alexdoan/nganluong:dev-master
+composer require taivoit1993/nganluong:dev-master
 ```
